@@ -52,8 +52,8 @@ BEGIN TRY
 	)
 	BEGIN
 		--alert the user they have provided an invalid environment parameter
-		PRINT 'Invalid parameter ' + @env + '. Valid parameters include Prod (Mobile), Stage, Test, LD or no parameter.'
-		PRINT 'If no parameter is provided, the default environment is Prod (Mobile).'	
+		PRINT 'Invalid parameter ' + @env + '. Valid parameters include Prod, Stage, Test or no parameter.'
+		PRINT 'If no parameter is provided, the default environment is Prod.'	
 	END		
 	
 	SET @db = CASE 
